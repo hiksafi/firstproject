@@ -81,11 +81,10 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 .om-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
 }
 .om-col-2{
-    
     flex-basis:60%;
 }
 .sub-title{
