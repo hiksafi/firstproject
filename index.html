@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Hjemmeside</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="images" href="images"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo1.png" class="logo1">
+                <ul id="sidemenu">
+                    <li><a href="#header">Hjem</a></li>
+                    <li><a href="#om">Om</a></li>
+                    <li><a href="#portfolie">Portfolie</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>IT-Supporter</p>
+                <h1>Hej <br> Velkommen til min side</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="om">
+        <div class="container">
+            <div class="row">
+                <div class="om-col-1">
+                    <img src="./images/user1.png"/>
+                </div>
+                <div class="om-col-2">
+                    <h1 class="sub-title">Om Mig</h1>
+                    <p>Jeg har valgt at læse Data og kommunikation fordi jeg har en meget stor interesse for IT.
+                        Jeg er altid blevet brugt som It-supporter af familie og venner. Det har været en af grundene til at jeg tog grundforløbet som jeg har taget en gang før i 2014.
+                        Jeg stoppede min uddanelse, da jeg ikke kunne finde en læreplads. Jeg har så fået ny motivation fordi der nu er mulighed for at komme på oplæringscenter.</p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Uddanelse')">Uddanelse</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Designe Hjemmesider</li>
+                            <li><span>Visual Studio</span><br>Kan forstå og bruge</li>
+                        </ul>
+                        </div>
+
+                    <div class="tab-content" id="Uddanelse">
+                        <ul>
+                            <li><span>2023-nu</span><br>TEC Skoleoplæringscenter</li>
+                            <li><span>2022</span><br>Data og kommunikation Grundforløb</li>
+                            <li><span>2018-2019</span><br>HF Enkelt fag VUC Lyngby</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------portfolie--------- -->
+    <div id="portfolie">
+        <div class="container">
+            <h1 class="sub-title">Mit Arbejde</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.png"/>
+                    <div class="layer">
+                        <h3>HTML & CSS</h3>
+                        <P>Med HTML & CSS har jeg formået at lave min egen hjemmeside</P>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.png"/>
+                    <div class="layer">
+                        <h3>C#</h3>
+                        <P>C# lærte jeg på grundforløbet. Jeg har brugt det til lidt forskelligt.  </P>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--kontakt-->
+<div id="kontakt">
+    <div class="container">
+            <div class="kontakt-left">
+                <h1>Kontakt Mig</h1>
+                <p>Hik_safi@hotmail.com</p>
+                <p>+45 53 42 35 93</p>
+            </div>
+            <a href="CV.docx" btn>Download CV</a>
+    </div>
+</div> 
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+        }
+    </script>
+</body>
+</html>
